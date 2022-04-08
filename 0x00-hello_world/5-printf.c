@@ -4,7 +4,7 @@
  * main - entry block
  * using printf() function
  * should return a newline after result
- * return (0)
+ * Return: Always 0 (Success)
 **/
 int main(void)
 {
