@@ -19,7 +19,7 @@ int main(void)
 				putchar(pre);
 				putchar(num);
 				putchar(par);
-				if (pre != '8' || num != '9' || par != '9')
+				if (pre != '7' || num != '8' || par != '9')
 				{
 					putchar(',');
 					putchar(' ');
