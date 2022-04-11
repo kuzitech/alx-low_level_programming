@@ -18,13 +18,12 @@ int main(void)
 			for (pre = par; pre <= '9'; pre++)
 			{
 				for (num = par2 + 1 ; num <= '9'; num++)
-				{		
+				{
 					putchar(par);
 					putchar(par2);
 					putchar(' ');
 					putchar(pre);
 					putchar(num);
-					
 					if (!((par == '9' && par2 == '8') && (pre == '9' && num == '9')))
 					{
 						/**stop adding space and comma at 98 99**/
