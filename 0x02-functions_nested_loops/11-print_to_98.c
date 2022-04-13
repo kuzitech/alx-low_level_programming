@@ -4,7 +4,7 @@
  * print_to_98 - prints numbers from input to 98
  *
  * @n: begining of the number
- * */
+ **/
 void print_to_98(int n)
 {
 	if (n >= 98)
