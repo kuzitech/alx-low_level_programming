@@ -2,7 +2,7 @@
 
 /**
  * print_line - draws a straight line in the terminal
- * @n: arguments to draw the line
+ * @n: arguments to draw the line a
  *
  */
 
