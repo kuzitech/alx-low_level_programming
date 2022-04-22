@@ -1,4 +1,4 @@
-#include "main.h"
+#include "mine.h"
 #include <math.h>
 #include <time.h>
 #include <stdio.h>
@@ -12,17 +12,17 @@
 
 int main(void)
 {
-	char password[16];
+	char password[90];
 	char checker[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!$#@&0123456789";
 	int i;
 
-	srand((long)(time(NULL)));
-	for (i = 0; i < 16; i++)
+	srand((double)(time(NULL)));
+	for (i = 0; i < 18; i++)
 	{
-		password = substr(checker, rand() % strlen(checker), 1);
+		password[i] = checker[rand() % strlen(checker)];
 	}
 
-	printf("%s", password);
+	printf("%s\n", password);
 
 	return (0);
 }
