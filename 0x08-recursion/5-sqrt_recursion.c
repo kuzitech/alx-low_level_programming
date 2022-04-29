@@ -26,6 +26,7 @@ int getSquared(int n, int x)
 int _sqrt_recursion(int n)
 {
 	int root = 0;
+	
 	if (n == 1)
 		return (1);
 	if (n < 0)
