@@ -1,5 +1,5 @@
 #include "main.h"
-#include "https://github.com/Bhayor/alx-low_level_programming/blob/master/cfun.h"
+#include "cfun.h"
 
 /**
  * is_palindrome - checks stings 
