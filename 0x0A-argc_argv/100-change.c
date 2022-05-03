@@ -23,17 +23,22 @@ int main(int argc, char *argv[])
 	}
 
 	i = atoi(argv[1]);
-	while (i > 0 && used <= 4)
+	if (i < 0)
+		printf("0\n");
+	else
 	{
-		if (i >= coins[cent])
+		while (i > 0 && used <= 4)
 		{
-			i -= coins[cent];
-			used++;
+			if (i >= coins[cent])
+			{
+				i -= coins[cent];
+				used++;
+			}
+			else
+				cent++;
 		}
-		else
-			cent++;
+		printf("%i\n", used);
 	}
-	printf("%i\n", used);
 	return (0);
 }
 
