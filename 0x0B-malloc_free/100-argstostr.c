@@ -13,7 +13,7 @@ char *argstostr(int ac, char **av)
 {
 	int i, strlen = 0, c = 0, parts = 0;
 	char *str;
-	
+
 	if (ac == 0 || av == NULL)
 		return (NULL);
 	for (i = 0; i < ac; i++)
@@ -23,12 +23,13 @@ char *argstostr(int ac, char **av)
 
 	if (str == NULL)
 		return (NULL);
-	
+
 	for (i = 0; i < ac; i++)
 	{
-		for (c = 0; av[i][c]; c++)
-			str[parts++] = av[i][c];
-		str[parts++] = '\n';
+		for (c = 0; av[i][c] != '\0'; c++, parts++)
+			str[parts] = av[i][c];
+		str[parts] = '\n';
+		parts++;
 	}
 	str[parts] = '\0';
 
