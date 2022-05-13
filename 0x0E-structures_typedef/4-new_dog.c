@@ -2,9 +2,6 @@
 #include "cfun.h"
 #include <stdlib.h>
 
-char *_strcopy(char *dest, char *src);
-dog_t *new_dog(char *name, float age, char *owner);
-
 /**
  ** new_dog - Creates a new dog.
  ** @name: The name.
