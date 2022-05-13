@@ -40,9 +40,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	wof->name = _strcopy(wof->name, name);
+	wof->name = _strcpy(wof->name, name);
 	wof->age = age;
-	wof->owner = _strcopy(wof->owner, owner);
+	wof->owner = _strcpy(wof->owner, owner);
 
 	return (wof);
 }
