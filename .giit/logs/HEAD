@@ -1,0 +1,3 @@
+0000000000000000000000000000000000000000 d76ddd8ac518ca60c21b8b7ad86443ca3c526e26 vagrant <vagrant@ubuntu-focal.(none)> 1650197854 +0000	clone: from https://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@github.com/bhayor/alx-low_level_programming.git
+d76ddd8ac518ca60c21b8b7ad86443ca3c526e26 4cf6af1b8d87729871522085397d806fb95b7c0d bhayor <bhayorbhayo@gmail.com> 1651877698 +0000	pull: Fast-forward
+4cf6af1b8d87729871522085397d806fb95b7c0d ce58f4591696b2b0bcde300c201cf0d519366249 bhayor <bhayorbhayo@gmail.com> 1652410216 +0000	commit: first

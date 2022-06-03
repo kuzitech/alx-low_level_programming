@@ -16,4 +16,27 @@ char *rot13(char *);
 void print_number(int n);
 char *infinite_add(char *n1, char *n2, char *r, int size_r);
 
+/**
+ * atoi - converts string to integer
+ * @s: string to be converted
+ * Return: integer
+ **/
+
+int _atoi(char *s)
+{
+	int symbol = 1;
+	unsigned int n = 0;
+
+	do {
+		if (*s == '-')
+			symbol *= -1;
+		else if (*s >= '0' && *s <= '9')
+			n = (n * 10) + (*s - '0');
+		else if (n > 0)
+			break;
+	} while (*s++);
+
+	return (n * symbol);
+}
+
 #endif
