@@ -1,14 +1,27 @@
 #ifndef CFUN_H
 #define CFUN_H
 
+#include <unistd.h>
 #include <stdlib.h>
+
+
+/**
+ *  *  * Main - entry point
+ *   *   *
+ *    *    *
+ *     *     * Return: 0 (Success)
+ *      *      */
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+}
+
 
 /**
  * * _strlen - returns the length of the string
  * * @str: string to check
  * *
  * * Return: int
- B
  **/
 
 size_t _strlen(const char *str)
@@ -88,6 +101,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 
 	return (dest);
 }
+
 /**
  *  * _atoi - converts string to integer
  *   * @s: string to be converted
@@ -112,10 +126,10 @@ int _atoi(const char *s)
 }
 
 /**
- *  * _puts - prints to stdout
- *   * @str: string to print
- *    *
- *     */
+ ** _puts - prints to stdout
+ ** @str: string to print
+ **
+ **/
 
 void _puts(char *str)
 {
@@ -126,9 +140,9 @@ void _puts(char *str)
 }
 
 /**
- *  * print_number - prints an integer
- *   * @n: number to be printed using _putchar
- *    */
+ ** print_number - prints an integer
+ ** @n: number to be printed using _putchar
+ **/
 
 void print_number(int n)
 {
@@ -145,4 +159,5 @@ void print_number(int n)
 		print_number(i / 10);
 	_putchar((i % 10) + '0');
 }
+
 #endif
