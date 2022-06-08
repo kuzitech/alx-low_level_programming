@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * array_rang - creates an array of ints
+ * array_range - creates an array of ints
  * @min: minimum range
  * @max: max range
  * Return: pointer
  */
 
-int *array_rang(int min, int max)
+int *array_range(int min, int max)
 {
 	int *ptr, i;
 
