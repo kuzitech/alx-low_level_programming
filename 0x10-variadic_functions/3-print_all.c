@@ -4,14 +4,13 @@
 
 /**
  * print_all - prints anything
- * @list: arguments
+ * @format: arguments
  */
 
 void print_all(const char * const format, ...)
 {
 	va_list list;
-	char *sep = "";
-	char *str;
+	char *sep = "", *str;
 	int i = 0;
 
 	va_start(list, format);
@@ -27,10 +26,8 @@ void print_all(const char * const format, ...)
 					break;
 				case 's':
 					str = va_arg(list, char *);
-
 					if (!str)
 						str = "(nil)";
-					
 					printf("%s%s", sep, str);
 					break;
 				case 'f':
@@ -48,7 +45,6 @@ void print_all(const char * const format, ...)
 			i++;
 		}
 	}
-
 	printf("\n");
 	va_end(list);
 }
